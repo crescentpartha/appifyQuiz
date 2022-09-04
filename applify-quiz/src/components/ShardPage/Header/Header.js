@@ -6,7 +6,11 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="secondary" sticky='top' variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Appify Quiz</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/home">
+                    <div className='d-flex  align-items-center justify-content-center'>
+                        <p className='m-0'>Appify<span className='text-warning'>Quiz</span></p>
+                    </div>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
