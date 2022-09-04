@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px){
+    .landing-img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 465px){
+    .landing-img {
+        width: 100%;
+    }
+}
