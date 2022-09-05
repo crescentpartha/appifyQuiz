@@ -14,7 +14,13 @@
     border-radius: 5px;
 }
 
-.twitter-icons:hover, .linkedIn-icons:hover {
+.twitter-icons:hover {
+    color: #1DA1F2;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.linkedIn-icons:hover {
     color: #1DA1F2;
     background-color: white;
     border-radius: 5px;

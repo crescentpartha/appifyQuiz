@@ -12,11 +12,11 @@ const Footer = () => {
                 <div className='d-flex flex-column gap-4 text-start p-0 gap-2'>
                     <p className='fs-3 m-0'>Appify<span className='text-warning'>Quiz</span></p>
                     <div className='d-flex gap-4 align-items-center justify-content-start'>
-                        <FontAwesomeIcon className='facebook-icons fs-4' icon={faFacebook}></FontAwesomeIcon>
-                        <FontAwesomeIcon className='twitter-icons fs-4' icon={faTwitter}></FontAwesomeIcon>
-                        <FontAwesomeIcon className='instagram-icons fs-4' icon={faInstagram}></FontAwesomeIcon>
-                        <FontAwesomeIcon className='youtube-icons fs-4' icon={faYoutube}></FontAwesomeIcon>
-                        <FontAwesomeIcon className='linkedIn-icons fs-4' icon={faLinkedin}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='facebook-icons p-1 fs-4' icon={faFacebook}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='twitter-icons p-1 fs-4' icon={faTwitter}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='instagram-icons p-1 fs-4' icon={faInstagram}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='youtube-icons fs-4' style={{ padding: '1px'}} icon={faYoutube}></FontAwesomeIcon>
+                        <FontAwesomeIcon className='linkedIn-icons fs-4' style={{ padding: '2px'}} icon={faLinkedin}></FontAwesomeIcon>
                     </div>
                     <div className='d-flex flex-wrap gap-2 align-items-center justify-content-start'>
                         <img src={google} alt="Download form Google" />
