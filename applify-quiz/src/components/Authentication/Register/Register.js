@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -19,7 +20,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto my-5 p-5 border border-secondary border-opacity-25 rounded shadow-sm text-start'>
-            <h2 className='text-primary text-center my-3'>Please Register</h2>
+            <h2 className='text-primary text-center mt-3 mb-4'>Please Register</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Control ref={nameRef} type="name" placeholder="Your Name" required />
@@ -61,6 +62,7 @@ const Register = () => {
                     >Login</Link>
                 </p>
             </div>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

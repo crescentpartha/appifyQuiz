@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -44,7 +45,7 @@ const Login = () => {
                         className='text-primary text-decoration-none mx-2 cursor-pointer'
                     >Please Register</Link>
                 </p>
-                <p className='d-flex align-items-center justify-content-center'>
+                <p className='d-flex align-items-center justify-content-center mb-0'>
                     <span>Forget Password?</span>
                     <button
                         className='btn btn-link text-decoration-none text-primary cursor-pointer p-2'
@@ -53,6 +54,7 @@ const Login = () => {
                     </button>
                 </p>
             </div>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
