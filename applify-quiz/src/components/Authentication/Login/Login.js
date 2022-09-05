@@ -40,13 +40,13 @@ const Login = () => {
                     <span>New to Appify</span>
                     <span className='text-warning'>Quiz</span>?
                     <Link
-                        to='signup'
+                        to='/signup'
                         className='text-primary text-decoration-none mx-2 cursor-pointer'
                     >Please Register</Link>
                 </p>
                 <p className='d-flex align-items-center justify-content-center'>
                     <span>Forget Password?</span>
-                    <button 
+                    <button
                         className='btn btn-link text-decoration-none text-primary cursor-pointer p-2'
                         onClick={resetPassword}>
                         <span>Reset Password</span>

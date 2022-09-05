@@ -5,6 +5,7 @@ import NotFound from './components/ShardPage/NotFound/NotFound';
 import Header from './components/ShardPage/Header/Header';
 import Footer from './components/ShardPage/Footer/Footer';
 import Login from './components/Authentication/Login/Login';
+import Register from './components/Authentication/Register/Register';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/signup' element={<Register></Register>}></Route>
         <Route path='/notFound' element={<NotFound></NotFound>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
