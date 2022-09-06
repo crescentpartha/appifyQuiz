@@ -1,10 +1,24 @@
 import React, { useRef, useState } from 'react';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import auth from '../../../firebase.init';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
+    const [error2, setError2] = useState('');
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+    const navigate = useNavigate();
+
+    if (user) {
+        navigate('/home');
+    }
 
     const nameRef = useRef('');
     const emailRef = useRef('');
@@ -16,6 +30,13 @@ const Register = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         // console.log(name, ' ', email, ' ', password);
+
+        if (password.length !== 8) {
+            setError2('Password length should be 8 character long');
+            return;
+        }
+
+        createUserWithEmailAndPassword(email, password);
     }
 
     return (
@@ -33,6 +54,8 @@ const Register = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+
+                { error2 ? <p className='text-danger text-center'>{error2}</p> : '' }
 
                 <div>
                     <div className='d-flex flex-nowrap align-items-center'>
