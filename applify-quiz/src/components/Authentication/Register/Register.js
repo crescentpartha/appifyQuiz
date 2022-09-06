@@ -4,6 +4,7 @@ import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../../../firebase.init';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -56,6 +57,10 @@ const Register = () => {
                 </Form.Group>
 
                 { error2 ? <p className='text-danger text-center'>{error2}</p> : '' }
+                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
+                {
+                    loading && <Loading></Loading>
+                }
 
                 <div>
                     <div className='d-flex flex-nowrap align-items-center'>
