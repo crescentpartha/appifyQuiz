@@ -43,11 +43,27 @@ const Register = () => {
             setCustomError('Password length should be 8 character long');
             return;
         }
+        else if (!/(?=.*[a-z])/.test(password)) {
+            setCustomError('Password should contain at least one lowercase character');
+            return;
+        }
+        else if (!/(?=.*[A-Z])/.test(password)) {
+            setCustomError('Password should contain at least one uppercase character');
+            return;
+        }
+        else if (!/(?=.*\d)/.test(password)) {
+            setCustomError('Password should contain at least one digit');
+            return;
+        }
+        else if (!/(?=.*[!@#$%^&*])/.test(password)) {
+            setCustomError('Password should contain at least one special character');
+            return;
+        }
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
         // alert('Updated profile');
-        toast('Send Email. Verify your email address');
+        toast('Sent Email. Verify your email address');
         navigate('/home');
     }
 
