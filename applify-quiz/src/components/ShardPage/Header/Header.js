@@ -29,9 +29,13 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         {
-                            user ? <button className='border border-light border-opacity-25 rounded text-light text-uppercase fw-normal bg-secondary' onClick={logout}>Sign Out</button>
-                            :
-                            <Nav.Link className='fw-semibold' as={Link} to="/login">Sign in</Nav.Link>
+                            user ?
+                                <div>
+                                    <span className='me-2 text-capitalize text-light fw-semibold'>{user.displayName}</span>
+                                    <button className='border border-light border-opacity-25 rounded text-light text-uppercase fw-normal bg-secondary' onClick={logout}>Sign Out</button>
+                                </div>
+                                :
+                                <Nav.Link className='fw-semibold' as={Link} to="/login">Sign in</Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>

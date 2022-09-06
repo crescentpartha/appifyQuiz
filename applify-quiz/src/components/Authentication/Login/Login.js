@@ -25,6 +25,7 @@ const Login = () => {
 
     if (user) {
         navigate('/home');
+        // console.log(user.user.displayName);
     }
 
     const emailRef = useRef('');
@@ -43,7 +44,7 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent Email');
+            toast('Sent Email. Change your password');
         }
         else {
             toast('Please, enter your email address');
@@ -64,7 +65,8 @@ const Login = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                {(error || error1) ? <p className='text-danger text-center'>{error.message} {error1.message}</p> : ''}
+                { error ? <p className='text-danger text-center'>{error.message}</p> : ''}
+                { error1 ? <p className='text-danger text-center'>{error1.message}</p> : ''}
                 {
                     (loading || sending) && <Loading></Loading>
                 }
