@@ -20,7 +20,7 @@ const Login = () => {
     const [
         sendPasswordResetEmail,
         sending,
-        error1
+        resetEmailError
     ] = useSendPasswordResetEmail(auth);
 
     if (user) {
@@ -65,8 +65,10 @@ const Login = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                { error ? <p className='text-danger text-center'>{error.message}</p> : ''}
-                { error1 ? <p className='text-danger text-center'>{error1.message}</p> : ''}
+                {
+                    (error || resetEmailError) ?
+                        <p className='text-danger text-center'>{error?.message} {resetEmailError?.message}</p> : ''
+                }
                 {
                     (loading || sending) && <Loading></Loading>
                 }

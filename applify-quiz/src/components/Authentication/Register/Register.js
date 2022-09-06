@@ -67,9 +67,10 @@ const Register = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                { customError ? <p className='text-danger text-center'>{customError}</p> : '' }
-                { profileError ? <p className='text-danger text-center'>{profileError.message}</p> : '' }
-                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
+                {
+                    (error || profileError || customError) ?
+                        <p className='text-danger text-center'>{error?.message} {profileError?.message} {customError}</p> : ''
+                }
                 {
                     (loading || updating) && <Loading></Loading>
                 }
