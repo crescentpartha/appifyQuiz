@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../../../firebase.init';
@@ -15,18 +17,19 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, error1] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
     if (user) {
-        navigate('/home');
+        // console.log(user);
     }
 
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
-    const handleSubmit = event => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const name = nameRef.current.value;
         const email = emailRef.current.value;
@@ -38,7 +41,12 @@ const Register = () => {
             return;
         }
 
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        // alert('Updated profile');
+        toast('Send Email for Verification');
+        navigate('/home');
+
     }
 
     return (
@@ -57,10 +65,11 @@ const Register = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                { error2 ? <p className='text-danger text-center'>{error2}</p> : '' }
-                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
+                {error2 ? <p className='text-danger text-center'>{error2}</p> : ''}
+                {error1 ? <p className='text-danger text-center'>{error1}</p> : ''}
+                {error ? <p className='text-danger text-center'>{error.message}</p> : ''}
                 {
-                    loading && <Loading></Loading>
+                    (loading || updating) && <Loading></Loading>
                 }
 
                 <div>
@@ -92,6 +101,7 @@ const Register = () => {
                 </p>
             </div>
             <SocialLogin></SocialLogin>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

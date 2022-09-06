@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import '../Register/Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -15,6 +17,11 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [
+        sendPasswordResetEmail,
+        sending,
+        error1
+    ] = useSendPasswordResetEmail(auth);
 
     if (user) {
         navigate('/home');
@@ -32,8 +39,15 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
-    const resetPassword = event => {
+    const resetPassword = async () => {
         const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent Email');
+        }
+        else {
+            toast('Please, enter your email address');
+        }
     }
 
     return (
@@ -50,9 +64,9 @@ const Login = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
+                {(error || error1) ? <p className='text-danger text-center'>{error.message} {error1.message}</p> : ''}
                 {
-                    loading && <Loading></Loading>
+                    (loading || sending) && <Loading></Loading>
                 }
 
                 <Button variant="primary w-50 mx-auto d-block my-4" type="submit">
@@ -78,6 +92,7 @@ const Login = () => {
                 </p>
             </div>
             <SocialLogin></SocialLogin>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
