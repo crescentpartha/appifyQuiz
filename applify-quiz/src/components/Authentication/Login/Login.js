@@ -1,10 +1,25 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 import '../Register/Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../Loading/Loading';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    if (user) {
+        navigate('/home');
+    }
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
 
@@ -13,6 +28,8 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         // console.log(email, ' ', password);
+
+        signInWithEmailAndPassword(email, password);
     }
 
     const resetPassword = event => {
@@ -32,6 +49,11 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+
+                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
+                {
+                    loading && <Loading></Loading>
+                }
 
                 <Button variant="primary w-50 mx-auto d-block my-4" type="submit">
                     Login
