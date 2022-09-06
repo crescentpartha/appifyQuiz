@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import './Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
@@ -41,7 +42,7 @@ const Register = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto my-5 p-5 border border-secondary border-opacity-25 rounded shadow-sm text-start'>
+        <div className='container authentication-container mx-auto my-5 border border-secondary border-opacity-25 rounded shadow-sm text-start'>
             <h2 className='text-primary text-center mt-3 mb-4'>Please Register</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicName">

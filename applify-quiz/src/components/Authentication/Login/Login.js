@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../Register/Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -19,7 +20,7 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto my-5 p-5 border border-secondary border-opacity-25 rounded shadow-sm text-start'>
+        <div className='container authentication-container mx-auto my-5 border border-secondary border-opacity-25 rounded shadow-sm text-start'>
             <h2 className='text-primary text-center my-3'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

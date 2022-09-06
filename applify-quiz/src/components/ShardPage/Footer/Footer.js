@@ -8,10 +8,10 @@ import store from '../../../images/app-store.png';
 const Footer = () => {
     return (
         <div className='bg-secondary text-light mx-auto p-5'>
-            <div className='d-flex flex-wrap gap-5 align-items-top justify-content-around m-0'>
+            <div className='d-flex flex-wrap gap-5 align-items-top justify-content-around m-0 mb-5'>
                 <div className='d-flex flex-column gap-4 text-start p-0 gap-2'>
                     <p className='fs-3 m-0'>Appify<span className='text-warning'>Quiz</span></p>
-                    <div className='d-flex gap-4 align-items-center justify-content-start'>
+                    <div className='d-flex flex-wrap gap-4 align-items-center justify-content-start'>
                         <FontAwesomeIcon className='facebook-icons p-1 fs-4' icon={faFacebook}></FontAwesomeIcon>
                         <FontAwesomeIcon className='twitter-icons p-1 fs-4' icon={faTwitter}></FontAwesomeIcon>
                         <FontAwesomeIcon className='instagram-icons p-1 fs-4' icon={faInstagram}></FontAwesomeIcon>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-resources d-flex flex-wrap gap-5 align-items-top justify-content-around text-start'>
-                    <div className='d-flex gap-5 align-items-top justify-content-around'>
+                    <div className='d-flex flex-wrap gap-5 align-items-top justify-content-around'>
                         <div>
                             <h4 className='text-uppercase fs-6'>AppifyQuiz Market</h4>
                             <div style={{ fontSize: '14px', color: '#B0C1C4'}}>
@@ -42,7 +42,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div  className='d-flex gap-5 align-items-top justify-content-around'>
+                    <div  className='d-flex flex-wrap gap-5 align-items-top justify-content-around'>
                         <div>
                             <h4 className='text-uppercase fs-6'>Our Community</h4>
                             <div style={{ fontSize: '14px', color: '#B0C1C4'}}>
@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <p className='m-0'>Copyright &copy;{new Date().getFullYear()} | Reserved by Appify<span className='text-warning'>Quiz</span></p>
+            <p className='m-0 mt-5'>Copyright &copy;{new Date().getFullYear()} | Reserved by Appify<span className='text-warning'>Quiz</span></p>
         </div>
     );
 };
