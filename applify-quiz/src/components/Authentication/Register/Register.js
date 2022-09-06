@@ -11,18 +11,21 @@ import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
-    const [error2, setError2] = useState('');
+    const [customError, setCustomError] = useState('');
+
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, error1] = useUpdateProfile(auth);
+    const [updateProfile, updating, profileError] = useUpdateProfile(auth);
+
     const navigate = useNavigate();
 
     if (user) {
         // console.log(user);
+        // navigate('/home');
     }
 
     const nameRef = useRef('');
@@ -37,7 +40,7 @@ const Register = () => {
         // console.log(name, ' ', email, ' ', password);
 
         if (password.length !== 8) {
-            setError2('Password length should be 8 character long');
+            setCustomError('Password length should be 8 character long');
             return;
         }
 
@@ -64,9 +67,9 @@ const Register = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                {error2 ? <p className='text-danger text-center'>{error2}</p> : ''}
-                {error1 ? <p className='text-danger text-center'>{error1}</p> : ''}
-                {error ? <p className='text-danger text-center'>{error.message}</p> : ''}
+                { customError ? <p className='text-danger text-center'>{customError}</p> : '' }
+                { profileError ? <p className='text-danger text-center'>{profileError.message}</p> : '' }
+                { error ? <p className='text-danger text-center'>{error.message}</p> : '' }
                 {
                     (loading || updating) && <Loading></Loading>
                 }
