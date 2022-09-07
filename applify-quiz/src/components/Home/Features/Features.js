@@ -8,7 +8,7 @@ const Features = () => {
     const handleFeatures = () => {
         toast('New features are coming soon!');
     }
-    
+
     return (
         <div className='bg-light py-4'>
             <div className='d-flex flex-wrap flex-md-nowrap gap-5 m-5 align-items-center justify-content-around'>

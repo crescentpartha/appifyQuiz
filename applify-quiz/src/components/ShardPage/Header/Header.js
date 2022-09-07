@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
+import { HashLink } from 'react-router-hash-link';
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -25,9 +26,14 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link className='mx-5 fw-semibold' as={CustomLink} to="/home">Home</Nav.Link>
-                    </Nav>
+                    <div className="me-auto d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                        <Nav>
+                            <Nav.Link className='mx-5 fw-semibold' as={CustomLink && HashLink} to="home#banner">Home</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link className='fw-semibold' as={(CustomLink && HashLink)} to="home#features">Features</Nav.Link>
+                        </Nav>
+                    </div>
                     <Nav>
                         {
                             user ?

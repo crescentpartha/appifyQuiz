@@ -6,7 +6,9 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Features></Features>
+            <div id='features'>
+                <Features></Features>
+            </div>
         </div>
     );
 };
