@@ -1,0 +1,193 @@
+{
+    "quizzesCart": {
+        "1": {
+            "cartId": "html-cart1",
+            "title": "HTML quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Free",
+            "price": "$0.00"
+        },
+        "2": {
+            "cartId": "css-cart2",
+            "title": "CSS quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Free",
+            "price": "$0.00"
+        },
+        "3": {
+            "cartId": "git-cart3",
+            "title": "Git & Github quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Free",
+            "price": "$0.00"
+        },
+        "4": {
+            "cartId": "responsive-design-cart4",
+            "title": "Responsive design quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Paid",
+            "price": "$15.00"
+        },
+        "5": {
+            "cartId": "js-cart5",
+            "title": "JavaScript quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Paid",
+            "price": "$20.00"
+        },
+        "6": {
+            "cartId": "react-cart6",
+            "title": "React quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Paid",
+            "price": "$22.00"
+        },
+        "7": {
+            "cartId": "react-router-cart7",
+            "title": "React Router quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Paid",
+            "price": "$18.00"
+        },
+        "8": {
+            "cartId": "firebase-cart8",
+            "title": "Firebase quiz test",
+            "noOfQuestions": 10,
+            "totalAttempts": 500,
+            "rating": 4.5,
+            "img": "",
+            "type": "Paid",
+            "price": "$20.00"
+        }
+    },
+    "quizzes": {
+        "js-cart5": {
+            "questions": [
+                {
+                    "title": "How do you define JavaScript?",
+                    "options": [
+                        {
+                            "optionsTitle": "Asynchronous"
+                        }, 
+                        {
+                            "optionsTitle": "Synchronous"
+                        }, 
+                        {
+                            "optionsTitle": "Compiler"
+                        }, 
+                        {
+                            "optionsTitle": "Interpreter"
+                        }, 
+                        {
+                            "optionsTitle": "Multi-threaded language"
+                        }, 
+                        {
+                            "optionsTitle": "Single-threaded language"
+                        }
+                    ]
+                },
+                {
+                    "title": "How to declare JavaScript Variable?",
+                    "options": [
+                        {
+                            "optionsTitle": "with var"
+                        }, 
+                        {
+                            "optionsTitle": "with int"
+                        }, 
+                        {
+                            "optionsTitle": "with let"
+                        }, 
+                        {
+                            "optionsTitle": "with float"
+                        }, 
+                        {
+                            "optionsTitle": "with const"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "answers": {
+        "js-cart5": {
+            "questions": [
+                {
+                    "title": "How do you define JavaScript?",
+                    "options": [
+                        {
+                            "optionsTitle": "Asynchronous",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Synchronous",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Compiler",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Interpreter",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Multi-threaded language",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Single-threaded language",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "How to declare JavaScript Variable?",
+                    "options": [
+                        {
+                            "optionsTitle": "with var",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "with int",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "with let",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "with float",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "with const",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
