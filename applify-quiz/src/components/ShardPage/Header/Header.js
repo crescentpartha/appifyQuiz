@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import CustomLink from '../CustomLink/CustomLink';
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -25,7 +26,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className='mx-5 fw-semibold' as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link className='mx-5 fw-semibold' as={CustomLink} to="/home">Home</Nav.Link>
                     </Nav>
                     <Nav>
                         {
@@ -35,7 +36,7 @@ const Header = () => {
                                     <button className='border border-light border-opacity-25 rounded text-light text-uppercase fw-normal bg-secondary' onClick={logout}>Sign Out</button>
                                 </div>
                                 :
-                                <Nav.Link className='fw-semibold' as={Link} to="/login">Sign in</Nav.Link>
+                                <Nav.Link className='fw-semibold' as={CustomLink} to="/login">Sign in</Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>
