@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,7 +10,11 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../Loading/Loading';
 
 const Login = () => {
+    const location = useLocation();
     const navigate = useNavigate();
+
+    const from = location?.state?.from?.pathname || '/';
+
     const [
         signInWithEmailAndPassword,
         user,
@@ -24,7 +28,7 @@ const Login = () => {
     ] = useSendPasswordResetEmail(auth);
 
     if (user) {
-        navigate('/home');
+        navigate(from, {replace: true});
         // console.log(user.user.displayName);
     }
 
