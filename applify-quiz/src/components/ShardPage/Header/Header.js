@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="secondary" sticky='top' variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to="/home">
+                <Navbar.Brand as={HashLink} to="/home#banner">
                     <div className='d-flex  align-items-center justify-content-center'>
                         <p className='m-0'>Appify<span className='text-warning'>Quiz</span></p>
                     </div>
