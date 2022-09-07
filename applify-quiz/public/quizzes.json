@@ -3,7 +3,7 @@
         "1": {
             "cartId": "html-cart1",
             "title": "HTML quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -13,7 +13,7 @@
         "2": {
             "cartId": "css-cart2",
             "title": "CSS quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -23,7 +23,7 @@
         "3": {
             "cartId": "git-cart3",
             "title": "Git & Github quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -33,7 +33,7 @@
         "4": {
             "cartId": "responsive-design-cart4",
             "title": "Responsive design quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -43,7 +43,7 @@
         "5": {
             "cartId": "js-cart5",
             "title": "JavaScript quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -53,7 +53,7 @@
         "6": {
             "cartId": "react-cart6",
             "title": "React quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -63,7 +63,7 @@
         "7": {
             "cartId": "react-router-cart7",
             "title": "React Router quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -73,7 +73,7 @@
         "8": {
             "cartId": "firebase-cart8",
             "title": "Firebase quiz test",
-            "noOfQuestions": 10,
+            "noOfQuestions": 2,
             "totalAttempts": 500,
             "rating": 4.5,
             "img": "",
@@ -82,6 +82,185 @@
         }
     },
     "quizzes": {
+        "html-cart1": {
+            "questions": [
+                {
+                    "title": "How do you define HTML?",
+                    "options": [
+                        {
+                            "optionsTitle": "Hyper Text Markup Language"
+                        }, 
+                        {
+                            "optionsTitle": "Higher Text Markup Language"
+                        }, 
+                        {
+                            "optionsTitle": "Structure of a Web page"
+                        }, 
+                        {
+                            "optionsTitle": "Structure of a Photo Frame"
+                        }, 
+                        {
+                            "optionsTitle": "Creating Web pages"
+                        }, 
+                        {
+                            "optionsTitle": "Programming language"
+                        }
+                    ]
+                },
+                {
+                    "title": "What is HTML Attributes?",
+                    "options": [
+                        {
+                            "optionsTitle": "Provide additional information about HTML elements"
+                        }, 
+                        {
+                            "optionsTitle": "href is a attribute"
+                        }, 
+                        {
+                            "optionsTitle": "Elements can not have attributes"
+                        }, 
+                        {
+                            "optionsTitle": "Attributes usually come in name/value pairs like: name='value'"
+                        }, 
+                        {
+                            "optionsTitle": "Attributes are always specified in the start tag"
+                        }
+                    ]
+                }
+            ]
+        },
+        "css-cart2": {
+            "questions": [
+                {
+                    "title": "What is CSS?",
+                    "options": [
+                        {
+                            "optionsTitle": "Cascading Style Sheets"
+                        }, 
+                        {
+                            "optionsTitle": "Crescent Style Sheets"
+                        }, 
+                        {
+                            "optionsTitle": "External stylesheets are stored in JS files"
+                        }, 
+                        {
+                            "optionsTitle": "External stylesheets are stored in CSS files"
+                        }, 
+                        {
+                            "optionsTitle": "Control the layout of multiple web pages"
+                        }, 
+                        {
+                            "optionsTitle": "Control the layout of single web page"
+                        }
+                    ]
+                },
+                {
+                    "title": "What is the correct about CSS Selectors?",
+                    "options": [
+                        {
+                            "optionsTitle": "We can divide CSS selectors into one categories"
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into two categories"
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into three categories"
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into four categories"
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into five categories"
+                        }
+                    ]
+                }
+            ]
+        },
+        "git-cart3": {
+            "questions": [
+                {
+                    "title": "What is Git?",
+                    "options": [
+                        {
+                            "optionsTitle": "Version Control System"
+                        }, 
+                        {
+                            "optionsTitle": "Version Community System"
+                        }, 
+                        {
+                            "optionsTitle": "Most popular, open-source, widely used"
+                        }, 
+                        {
+                            "optionsTitle": "VCS"
+                        }
+                    ]
+                },
+                {
+                    "title": "Which is the features of git?",
+                    "options": [
+                        {
+                            "optionsTitle": "Branching Capabilities"
+                        }, 
+                        {
+                            "optionsTitle": "Distributed manner of development"
+                        }, 
+                        {
+                            "optionsTitle": "Pull requests feature"
+                        }, 
+                        {
+                            "optionsTitle": "Used to collaborate with other developers"
+                        }, 
+                        {
+                            "optionsTitle": "File Management System"
+                        }
+                    ]
+                }
+            ]
+        },
+        "responsive-design-cart4": {
+            "questions": [
+                {
+                    "title": "What you mean by Responsive Design?",
+                    "options": [
+                        {
+                            "optionsTitle": "An approach to web design"
+                        }, 
+                        {
+                            "optionsTitle": "Makes web pages render well on a variety of devices and window or screen sizes"
+                        }, 
+                        {
+                            "optionsTitle": "Your website look nice on all devices"
+                        }, 
+                        {
+                            "optionsTitle": "Help to give better website performance"
+                        }, 
+                        {
+                            "optionsTitle": "Increase Website Visibility"
+                        }
+                    ]
+                },
+                {
+                    "title": "How do you make a responsive design?",
+                    "options": [
+                        {
+                            "optionsTitle": "Using media query"
+                        }, 
+                        {
+                            "optionsTitle": "Using Bootstrap"
+                        }, 
+                        {
+                            "optionsTitle": "Using Bootstrap Breakpoint"
+                        }, 
+                        {
+                            "optionsTitle": "Using Tailwind"
+                        }, 
+                        {
+                            "optionsTitle": "Using Tailwind Breakpoint"
+                        }
+                    ]
+                }
+            ]
+        },
         "js-cart5": {
             "questions": [
                 {
@@ -128,9 +307,367 @@
                     ]
                 }
             ]
+        },
+        "react-cart6": {
+            "questions": [
+                {
+                    "title": "What is React?",
+                    "options": [
+                        {
+                            "optionsTitle": "Open-Source front-end JavaScript library"
+                        }, 
+                        {
+                            "optionsTitle": "Open-Source front-end JavaScript framework"
+                        }, 
+                        {
+                            "optionsTitle": "Building user interfaces"
+                        }, 
+                        {
+                            "optionsTitle": "Building webpage structure"
+                        }, 
+                        {
+                            "optionsTitle": "First deployed on Facebook's News Feed in 2011 and on Instagram in 2012"
+                        }, 
+                        {
+                            "optionsTitle": "Used for handling view layer for web and mobile apps"
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the major features of React?",
+                    "options": [
+                        {
+                            "optionsTitle": "VirtualDOM"
+                        }, 
+                        {
+                            "optionsTitle": "RealDOM"
+                        }, 
+                        {
+                            "optionsTitle": "Supports server-side rendering"
+                        }, 
+                        {
+                            "optionsTitle": "Follows Unidirectional data flow or data binding"
+                        }, 
+                        {
+                            "optionsTitle": "Uses reusable/composable UI components to develop the view"
+                        }
+                    ]
+                }
+            ]
+        },
+        "react-router-cart7": {
+            "questions": [
+                {
+                    "title": "What is React Router?",
+                    "options": [
+                        {
+                            "optionsTitle": "Powerful routing library built on top of React"
+                        }, 
+                        {
+                            "optionsTitle": "helps to add new screens and flows to your application incredibly quickly"
+                        }, 
+                        {
+                            "optionsTitle": "Powerful routing framework built on top of React"
+                        }, 
+                        {
+                            "optionsTitle": "Helps to create and navigate between the different URLs"
+                        }, 
+                        {
+                            "optionsTitle": "It was first released in May 2014"
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the advantages of React Router?",
+                    "options": [
+                        {
+                            "optionsTitle": "It enables the navigation among views of various components in a React Application"
+                        }, 
+                        {
+                            "optionsTitle": "Allows changing the browser URL"
+                        }, 
+                        {
+                            "optionsTitle": "keeps the UI in sync with the URL"
+                        }, 
+                        {
+                            "optionsTitle": "There are three primary categories of components in React Router"
+                        }, 
+                        {
+                            "optionsTitle": "There are four primary categories of components in React Router"
+                        }
+                    ]
+                }
+            ]
+        },
+        "firebase-cart8": {
+            "questions": [
+                {
+                    "title": "What Firebase is used for?",
+                    "options": [
+                        {
+                            "optionsTitle": "Firebase helps you develop high-quality apps"
+                        }, 
+                        {
+                            "optionsTitle": "Firebase helps you grow your user base"
+                        }, 
+                        {
+                            "optionsTitle": "Each feature works independently"
+                        }, 
+                        {
+                            "optionsTitle": "Firebase Realtime Database is a cloud-hosted database"
+                        }, 
+                        {
+                            "optionsTitle": "Data is stored as JSON"
+                        }, 
+                        {
+                            "optionsTitle": "Synchronized in realtime to every connected client"
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the Pros & Cons in Firebase?",
+                    "options": [
+                        {
+                            "optionsTitle": "Email & password, Google, Facebook, and Github authentication"
+                        }, 
+                        {
+                            "optionsTitle": "Realtime data"
+                        }, 
+                        {
+                            "optionsTitle": "Built in security at the data node level"
+                        }, 
+                        {
+                            "optionsTitle": "File storage backed by Google Cloud Storage"
+                        }, 
+                        {
+                            "optionsTitle": "Treat data as streams to build lower scalable applications"
+                        }
+                    ]
+                }
+            ]
         }
     },
     "answers": {
+        "html-cart1": {
+            "questions": [
+                {
+                    "title": "How do you define HTML?",
+                    "options": [
+                        {
+                            "optionsTitle": "Hyper Text Markup Language",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Higher Text Markup Language",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Structure of a Web page",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Structure of a Photo Frame",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Creating Web pages",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Programming language",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "title": "What is HTML Attributes?",
+                    "options": [
+                        {
+                            "optionsTitle": "Provide additional information about HTML elements",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "href is a attribute",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Elements can not have attributes",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Attributes usually come in name/value pairs like: name='value'",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Attributes are always specified in the start tag",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "css-cart2": {
+            "questions": [
+                {
+                    "title": "What is CSS?",
+                    "options": [
+                        {
+                            "optionsTitle": "Cascading Style Sheets",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Crescent Style Sheets",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "External stylesheets are stored in JS files",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "External stylesheets are stored in CSS files",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Control the layout of multiple web pages",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Control the layout of single web page",
+                            "correct": false
+                        }
+                    ]
+                },
+                {
+                    "title": "What is the correct about CSS Selectors?",
+                    "options": [
+                        {
+                            "optionsTitle": "We can divide CSS selectors into one categories",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into two categories",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into three categories",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into four categories",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "We can divide CSS selectors into five categories",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "git-cart3": {
+            "questions": [
+                {
+                    "title": "What is Git?",
+                    "options": [
+                        {
+                            "optionsTitle": "Version Control System",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Version Community System",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Most popular, open-source, widely used",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "VCS",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "Which is the features of git?",
+                    "options": [
+                        {
+                            "optionsTitle": "Branching Capabilities",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Distributed manner of development",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Pull requests feature",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Used to collaborate with other developers",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Schedule Management System",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "responsive-design-cart4": {
+            "questions": [
+                {
+                    "title": "What you mean by Responsive Design?",
+                    "options": [
+                        {
+                            "optionsTitle": "An approach to web design",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Makes web pages render well on a variety of devices and window or screen sizes",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Your website look nice on all devices",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Help to give better website performance",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Increase Website Visibility",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "How do you make a responsive design?",
+                    "options": [
+                        {
+                            "optionsTitle": "Using media query",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Using Bootstrap",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Using Bootstrap Breakpoint",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Using Tailwind",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Using Tailwind Breakpoint",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
+        },
         "js-cart5": {
             "questions": [
                 {
@@ -184,6 +721,176 @@
                         {
                             "optionsTitle": "with const",
                             "correct": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "react-cart6": {
+            "questions": [
+                {
+                    "title": "What is React?",
+                    "options": [
+                        {
+                            "optionsTitle": "Open-Source front-end JavaScript library",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Open-Source front-end JavaScript framework",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Building user interfaces",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Building webpage structure",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "First deployed on Facebook's News Feed in 2011 and on Instagram in 2012",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Used for handling view layer for web and mobile apps",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the major features of React?",
+                    "options": [
+                        {
+                            "optionsTitle": "VirtualDOM",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "RealDOM",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Supports server-side rendering",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Follows Unidirectional data flow or data binding",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Uses reusable/composable UI components to develop the view",
+                            "correct": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "react-router-cart7": {
+            "questions": [
+                {
+                    "title": "What is React Router?",
+                    "options": [
+                        {
+                            "optionsTitle": "Powerful routing library built on top of React",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "helps to add new screens and flows to your application incredibly quickly",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Powerful routing framework built on top of React",
+                            "correct": false
+                        }, 
+                        {
+                            "optionsTitle": "Helps to create and navigate between the different URLs",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "It was first released in May 2014",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the advantages of React Router?",
+                    "options": [
+                        {
+                            "optionsTitle": "It enables the navigation among views of various components in a React Application",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Allows changing the browser URL",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "keeps the UI in sync with the URL",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "There are three primary categories of components in React Router",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "There are four primary categories of components in React Router",
+                            "correct": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "firebase-cart8": {
+            "questions": [
+                {
+                    "title": "What Firebase is used for?",
+                    "options": [
+                        {
+                            "optionsTitle": "Firebase helps you develop high-quality apps",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Firebase helps you grow your user base",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Each feature works independently",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Firebase Realtime Database is a cloud-hosted database",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Data is stored as JSON",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Synchronized in realtime to every connected client",
+                            "correct": true
+                        }
+                    ]
+                },
+                {
+                    "title": "What are the Pros & Cons in Firebase?",
+                    "options": [
+                        {
+                            "optionsTitle": "Email & password, Google, Facebook, and Github authentication",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Realtime data",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Built in security at the data node level",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "File storage backed by Google Cloud Storage",
+                            "correct": true
+                        }, 
+                        {
+                            "optionsTitle": "Treat data as streams to build lower scalable applications",
+                            "correct": false
                         }
                     ]
                 }
