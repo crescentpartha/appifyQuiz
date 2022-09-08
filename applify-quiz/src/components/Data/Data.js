@@ -1,0 +1,14 @@
+import React from 'react';
+
+const Data = () => {
+    return (
+        <div>
+            <div className='my-5'>
+                <h2 className='text-center text-success fw-semibold mb-4'>Folder Structure</h2>
+                <iframe title='Folder Structure' src="https://jsoncrack.com/widget?json=%5B%5B%22APPIFYQUIZ%22%2C%22a%7C0%22%2C%22appify-quiz%22%2C%22a%7C2%22%2C%22public%22%2C%22src%22%2C%22a%7C4%7C5%22%2C%22_redirects%22%2C%22favicon.ico%22%2C%22index.html%22%2C%22manifest.json%22%2C%22quizzes.json%22%2C%22folderStructure.json%22%2C%22a%7C7%7C8%7C9%7CA%7CB%7CC%22%2C%22component%22%2C%22hooks%22%2C%22images%22%2C%22a%7CE%7CF%7CG%22%2C%22Authentication%22%2C%22Data%22%2C%22Home%22%2C%22Quizzes%22%2C%22ShardPage%22%2C%22a%7CI%7CJ%7CK%7CL%7CM%22%2C%22Loading%22%2C%22Login%22%2C%22Register%22%2C%22RequireAuth%22%2C%22SocialLogin%22%2C%22a%7CO%7CP%7CQ%7CR%7CS%22%2C%22Loading.js%22%2C%22a%7CU%22%2C%22Login.js%22%2C%22a%7CW%22%2C%22Register.js%22%2C%22Register.css%22%2C%22a%7CY%7CZ%22%2C%22RequireAuth.js%22%2C%22a%7Cb%22%2C%22SocialLogin.js%22%2C%22a%7Cd%22%2C%22o%7CT%7CV%7CX%7Ca%7Cc%7Ce%22%2C%22Data.js%22%2C%22a%7Cg%22%2C%22Banner%22%2C%22Features%22%2C%22QuizCart%22%2C%22QuizCarts%22%2C%22a%7Ci%7Cj%7CK%7Ck%7Cl%22%2C%22Banner.js%22%2C%22a%7Cn%22%2C%22Features.js%22%2C%22a%7Cp%22%2C%22Home.js%22%2C%22a%7Cr%22%2C%22QuizCart.js%22%2C%22a%7Ct%22%2C%22QuizCarts.js%22%2C%22a%7Cv%22%2C%22o%7Cm%7Co%7Cq%7Cs%7Cu%7Cw%22%2C%22Body%22%2C%22HeaderQuizzes%22%2C%22a%7Cy%7Cz%7CL%22%2C%22Body.js%22%2C%22a%7C11%22%2C%22HeaderQuizzes.js%22%2C%22a%7C13%22%2C%22Quizzes.js%22%2C%22a%7C15%22%2C%22o%7C10%7C12%7C14%7C16%22%2C%22CustomLink%22%2C%22Footer%22%2C%22Header%22%2C%22NotFound%22%2C%22a%7C18%7C19%7C1A%7C1B%22%2C%22CustomLink.js%22%2C%22a%7C1D%22%2C%22Footer.js%22%2C%22Footer.css%22%2C%22a%7C1F%7C1G%22%2C%22Header.js%22%2C%22a%7C1I%22%2C%22NotFound.js%22%2C%22NotFound.css%22%2C%22a%7C1K%7C1L%22%2C%22o%7C1C%7C1E%7C1H%7C1J%7C1M%22%2C%22o%7CN%7Cf%7Ch%7Cx%7C17%7C1N%22%2C%22useQuizCarts.js%22%2C%22a%7C1P%22%2C%22app-store.png%22%2C%22github30.png%22%2C%22google-play.png%22%2C%22google30.png%22%2C%22notFound.jpg%22%2C%22onlineTest-illustration.jpg%22%2C%22onlineTest.jpg%22%2C%22a%7C1R%7C1S%7C1T%7C1U%7C1V%7C1W%7C1X%22%2C%22o%7CH%7C1O%7C1Q%7C1Y%22%2C%22App.css%22%2C%22App.js%22%2C%22App.test.js%22%2C%22firebase.init.js%22%2C%22index.css%22%2C%22index.js%22%2C%22logo.svg%22%2C%22reportWebVitals.js%22%2C%22setupTest.js%22%2C%22a%7C1Z%7C1a%7C1b%7C1c%7C1d%7C1e%7C1f%7C1g%7C1h%7C1i%22%2C%22o%7C6%7CD%7C1j%22%2C%22.env.local%22%2C%22.gitignore%22%2C%22package-lock.json%22%2C%22package.json%22%2C%22README.md%22%2C%22a%7C1k%7C1l%7C1m%7C1n%7C1o%7C1p%22%2C%22o%7C3%7C1q%22%2C%22a%7C1r%7C1p%22%2C%22o%7C1%7C1s%22%5D%2C%221t%22%5D" width="95%" height="584" style={{ border: '2px solid #b9bbbe', borderRadius: '6px' }}></iframe>
+            </div>
+        </div>
+    );
+};
+
+export default Data;

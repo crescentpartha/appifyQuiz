@@ -39,6 +39,9 @@ const Header = () => {
                         <Nav>
                             <Nav.Link className='mx-4 fw-semibold' as={CustomLink} to="/quizzes">Quizzes</Nav.Link>
                         </Nav>
+                        <Nav>
+                            <Nav.Link className='mx-4 fw-semibold' as={CustomLink} to="/data">Data</Nav.Link>
+                        </Nav>
                     </div>
                     <Nav>
                         {

@@ -8,6 +8,7 @@ import Login from './components/Authentication/Login/Login';
 import Register from './components/Authentication/Register/Register';
 import RequireAuth from './components/Authentication/RequireAuth/RequireAuth';
 import Body from './components/Quizzes/Body/Body';
+import Data from './components/Data/Data';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/quizzes' element={<Body></Body>}></Route>
+        <Route path='/data' element={<Data></Data>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Register></Register>}></Route>
         <Route path='/notFound' element={

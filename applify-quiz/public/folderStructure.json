@@ -1,0 +1,116 @@
+{
+  "APPIFYQUIZ": [
+    {
+      "appify-quiz": [
+        {
+          "public": [
+            "_redirects",
+            "favicon.ico",
+            "index.html",
+            "manifest.json",
+            "quizzes.json",
+            "folderStructure.json"
+          ],
+          "src": [
+            {
+              "component": {
+                "Authentication": {
+                  "Loading": [
+                    "Loading.js"
+                  ],
+                  "Login": [
+                    "Login.js"
+                  ],
+                  "Register": [
+                    "Register.js",
+                    "Register.css"
+                  ],
+                  "RequireAuth": [
+                    "RequireAuth.js"
+                  ],
+                  "SocialLogin": [
+                    "SocialLogin.js"
+                  ]
+                },
+                "Data": [
+                  "Data.js"
+                ],
+                "Home": {
+                  "Banner": [
+                    "Banner.js"
+                  ],
+                  "Features": [
+                    "Features.js"
+                  ],
+                  "Home": [
+                    "Home.js"
+                  ],
+                  "QuizCart": [
+                    "QuizCart.js"
+                  ],
+                  "QuizCarts": [
+                    "QuizCarts.js"
+                  ]
+                },
+                "Quizzes": {
+                  "Body": [
+                    "Body.js"
+                  ],
+                  "HeaderQuizzes": [
+                    "HeaderQuizzes.js"
+                  ],
+                  "Quizzes": [
+                    "Quizzes.js"
+                  ]
+                },
+                "ShardPage": {
+                  "CustomLink": [
+                    "CustomLink.js"
+                  ],
+                  "Footer": [
+                    "Footer.js",
+                    "Footer.css"
+                  ],
+                  "Header": [
+                    "Header.js"
+                  ],
+                  "NotFound": [
+                    "NotFound.js",
+                    "NotFound.css"
+                  ]
+                }
+              },
+              "hooks": [
+                "useQuizCarts.js"
+              ],
+              "images": [
+                "app-store.png",
+                "github30.png",
+                "google-play.png",
+                "google30.png",
+                "notFound.jpg",
+                "onlineTest-illustration.jpg",
+                "onlineTest.jpg"
+              ]
+            },
+            "App.css",
+            "App.js",
+            "App.test.js",
+            "firebase.init.js",
+            "index.css",
+            "index.js",
+            "logo.svg",
+            "reportWebVitals.js",
+            "setupTest.js"
+          ]
+        },
+        ".env.local",
+        ".gitignore",
+        "package-lock.json",
+        "package.json",
+        "README.md"
+      ]
+    },
+    "README.md"
+  ]
+}
