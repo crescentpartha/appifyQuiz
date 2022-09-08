@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useQuizCarts = () => {
-    const [carts, setCarts] = useState({});
+    const [carts, setCarts] = useState([]);
 
     useEffect( () => {
         fetch('quizzes.json')

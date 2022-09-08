@@ -1,28 +1,22 @@
 import React from 'react';
+import { Row } from 'react-bootstrap';
 import useQuizCarts from '../../../hooks/useQuizCarts';
 import QuizCart from '../QuizCart/QuizCart';
 
 const QuizCarts = () => {
     const [carts] = useQuizCarts();
-    console.log(carts);
-    // console.log(carts.no1?.title);
 
-    for (const key in carts) {
-        const cart = carts[key];
-        // console.log(cart.cartId);
-        // console.log(cart);
-        <QuizCart cart={cart} key={cart.cartId}></QuizCart>
-
-    }
     return (
-        <div>
-            <h2>Quizzes Carts: {carts.length}</h2>
-            {
-                // for (const key in carts) {
-                //     console.log(carts[key]);
-                // }
-                // cart.map(c => console.log(c))
-            }
+        <div className='container my-5'>
+            <h2>Some Quiz Tests</h2>
+            <Row xs={1} md={2} lg={3} className="g-4 m-0">
+                {
+                    carts.map(cart => <QuizCart
+                        cart={cart}
+                        key={cart.cartId}
+                    ></QuizCart>)
+                }
+            </Row>
         </div>
     );
 };
