@@ -7,6 +7,7 @@ import Footer from './components/ShardPage/Footer/Footer';
 import Login from './components/Authentication/Login/Login';
 import Register from './components/Authentication/Register/Register';
 import RequireAuth from './components/Authentication/RequireAuth/RequireAuth';
+import Body from './components/Quizzes/Body/Body';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/quizzes' element={<Body></Body>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Register></Register>}></Route>
         <Route path='/notFound' element={

@@ -28,10 +28,16 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <div className="me-auto d-flex flex-column flex-lg-row align-items-center justify-content-center">
                         <Nav>
-                            <Nav.Link className='mx-5 fw-semibold' as={CustomLink && HashLink} to="home#banner">Home</Nav.Link>
+                            <Nav.Link className='mx-4 fw-semibold' as={CustomLink && HashLink} to="home#banner">Home</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link className='fw-semibold' as={(CustomLink && HashLink)} to="home#features">Features</Nav.Link>
+                            <Nav.Link className='mx-4 fw-semibold' as={(CustomLink && HashLink)} to="home#features">Features</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link className='mx-4 fw-semibold' as={(CustomLink && HashLink)} to="home#quiz">Quiz</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link className='mx-4 fw-semibold' as={CustomLink} to="/quizzes">Quizzes</Nav.Link>
                         </Nav>
                     </div>
                     <Nav>
