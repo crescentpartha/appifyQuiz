@@ -9,7 +9,7 @@ const QuizCart = ({ cart }) => {
             <Card className='border-0 shadow-sm'>
                 <Card.Img variant="top" src={img} className='img-fluid rounded w-100' alt={title}/>
                 <Card.Body>
-                    <Card.Title className='mb-4'>{title}</Card.Title>
+                    <Card.Title className='mb-4 text-success'>{title}</Card.Title>
                     <Card.Text className='d-flex align-items-center justify-content-around'>
                         <span><b>Price: </b>{price}</span>
                         <span><b>Type: </b>{type}</span>
