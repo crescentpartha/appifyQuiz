@@ -1,9 +1,15 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const QuizCart = ({ cart }) => {
-    const { title, img, noOfQuestions, price, rating, totalAttempts, type } = cart;
+    const { cartId, title, img, noOfQuestions, price, rating, totalAttempts, type } = cart;
     // console.log(cart);
+
+    const navigate = useNavigate();
+    const handleNavigateQuizTest = cartId => {
+        navigate(`/quiz/${cartId}`);
+    }
     return (
         <Col className=''>
             <Card className='border-0 shadow-sm'>
@@ -19,7 +25,7 @@ const QuizCart = ({ cart }) => {
                         <span><b>Total Questions: </b>{noOfQuestions}</span>
                         <span><b>Total Attempts: </b>{totalAttempts}</span>
                     </Card.Text>
-                    <button className='btn btn-outline-success'>Start Test</button>
+                    <button onClick={() => handleNavigateQuizTest(cartId)} className='btn btn-outline-success'>Start Test</button>
                 </Card.Body>
             </Card>
         </Col>
